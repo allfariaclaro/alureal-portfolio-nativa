@@ -23,3 +23,12 @@ document.querySelector('[data-open-cart]').onclick=()=>drawer.classList.add('ope
 document.querySelector('[data-close-cart]').onclick=()=>drawer.classList.remove('open');
 document.querySelector('[data-checkout]').onclick=()=>document.querySelector('[data-cart-message]').textContent='Demonstração: checkout iniciado. Em produção, esta etapa integraria pagamento, frete e estoque.';
 render();
+
+// portfolio-polish-2026-09-29
+const openCart=()=>{drawer.classList.add('open');document.body.classList.add('cart-open');document.querySelector('[data-close-cart]')?.focus()};
+const closeCart=()=>{drawer.classList.remove('open');document.body.classList.remove('cart-open')};
+document.querySelectorAll('[data-add]').forEach(button=>button.addEventListener('click',()=>document.body.classList.add('cart-open')));
+document.querySelector('[data-open-cart]')?.addEventListener('click',()=>{document.body.classList.add('cart-open')});
+document.querySelector('[data-close-cart]')?.addEventListener('click',closeCart);
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&drawer.classList.contains('open'))closeCart()});
+document.addEventListener('pointerdown',event=>{if(document.body.classList.contains('cart-open')&&!drawer.contains(event.target)&&!event.target.closest('[data-open-cart],[data-add]'))closeCart()});
