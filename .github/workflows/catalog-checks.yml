@@ -1,0 +1,19 @@
+name: Catalog checks
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  catalog-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check syntax and catalog regression
+        run: |
+          node --check nativa-app.js
+          node --check nativa-data.js
+          node --test tests/catalog.test.cjs
+          git diff --check

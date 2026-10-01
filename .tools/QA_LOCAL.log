@@ -1,0 +1,10 @@
+PASS: category URL/select, price exact IDs, materials, combined empty, search/clear, reload, detail return after clear, repeated favorite clicks, Back/Forward, variants/cart quantity/totals.
+PASS: 1440px light/dark/system initial, filters/clear, no horizontal overflow.
+PASS: 768px light/dark/system initial, filters/clear, no horizontal overflow.
+PASS: 390px light/dark/system initial, filters/clear, no horizontal overflow.
+PASS: 320px light/dark/system initial, filters/clear, no horizontal overflow.
+PASS: root / and /portfolio/ home/category/detail navigation, return query after clear, unsafe query sanitation.
+PASS: theme toggle, keyboard focus/clear.
+LOCAL HTTP failures: []
+Console/page errors: []
+Follow-up asset inspection: Toalha Folha existing Unsplash URL failed net::ERR_BLOCKED_BY_ORB, naturalWidth=0. Existing external asset preserved; local functional checks still PASS. External assets are not claimed as fully passing.
