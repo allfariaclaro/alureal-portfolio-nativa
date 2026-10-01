@@ -7,3 +7,4 @@ PASS: root / and /portfolio/ home/category/detail navigation, return query after
 PASS: theme toggle, keyboard focus/clear.
 LOCAL HTTP failures: []
 Console/page errors: []
+Follow-up asset inspection: Toalha Folha existing Unsplash URL failed net::ERR_BLOCKED_BY_ORB, naturalWidth=0. Existing external asset preserved; local functional checks still PASS. External assets are not claimed as fully passing.

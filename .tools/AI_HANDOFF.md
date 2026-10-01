@@ -18,3 +18,13 @@ PENDENTE: PR draft e check remoto; revisão do pai. Nova versão não publicada 
 EVIDÊNCIAS: .tools/QA_NODE.log, .tools/QA_LOCAL.log; script opcional .tools/qa-browser.cjs usa Playwright externo existente via NATIVA_PLAYWRIGHT, não acrescenta dependência ao repo/CI. Serve portas locais 8766 repo e 8767 raiz temporária com portfolio apontando repo. Screenshots /tmp/nativa-{1440,768,390,320}-{light,dark}.png; desktop claro/mobile escuro inspecionados visualmente.
 LIMITAÇÃO OBSERVADA: imagem externa existente da Toalha Folha apareceu quebrada nas screenshots; URL/dados preservados por escopo. Não afirmar QA completo de assets externos.
 PRÓXIMO PASSO: commit/push apenas branch fix/catalog-state e abrir draft; consultar checks uma vez após janela útil, sem merge/deploy.
+
+## PR draft aberto
+PR: https://github.com/allfariaclaro/alureal-portfolio-nativa/pull/1 (OPEN, isDraft=true).
+Commit funcional: 580b5527652484d8a0004936c8728cd1ed425da0.
+Branch enviada: fix/catalog-state; main/deploy intactos. PR anexado à tarefa.
+Check observado: Catalog checks / catalog-regression, IN_PROGRESS, run 36817722354, job 110226332557 (primeira consulta).
+Imagem externa confirmada: Toalha Folha, net::ERR_BLOCKED_BY_ORB e naturalWidth=0; observação incluída no PR e log.
+PENDENTE: revisão do pai para eventual merge/deploy. Nenhum pedido real, pagamento, DNS ou outro projeto alterado.
+PRÓXIMO PASSO: consultar resultado do CI após este commit documental; estado final/exatos no retorno ao pai. Não repetir QA local sem mudança funcional.
+MODELO PARA PRÓXIMA ETAPA: manter GPT-6.1 Sol Medium solicitado para revisão; Fast desligado conforme pedido, sem alegar alteração de seletor.
